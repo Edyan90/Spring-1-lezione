@@ -7,7 +7,7 @@ import EddyTurpo.Spring_first_lesson.entities.Pizza;
 import EddyTurpo.Spring_first_lesson.entities.Toppings;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
+
 
 @Configuration
 
@@ -48,7 +48,7 @@ public class CiboConfig {
     }
     @Bean
     public Pizza hawaiana(){
-        Pizza pizza2=new Pizza("Hawaiana",7.5,2000);
+        Pizza pizza2=new Pizza("Hawaiana",250.0,2000);
         pizza2.addTopping(cheese());
         pizza2.addTopping(tomato());
         pizza2.addTopping(ham());

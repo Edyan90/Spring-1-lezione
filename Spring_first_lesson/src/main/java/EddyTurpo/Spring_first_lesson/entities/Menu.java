@@ -23,7 +23,7 @@ public class Menu {
 
     public void printMenu() {
         System.out.println(" ");
-        System.out.println("RISTORANTE PIZZERIA 'MAMMA MIA'");
+        System.out.println("RISTORANTE PIZZERIA 'LITTLE ITALY'");
         System.out.println(" ");
         for (Cibo cibo : menu) {
             cibo.printCiboDetails();
