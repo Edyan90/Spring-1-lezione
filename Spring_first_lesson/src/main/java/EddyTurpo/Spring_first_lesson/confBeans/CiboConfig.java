@@ -7,8 +7,10 @@ import EddyTurpo.Spring_first_lesson.entities.Pizza;
 import EddyTurpo.Spring_first_lesson.entities.Toppings;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
+
 public class CiboConfig {
     //Toppings
     @Bean
@@ -42,23 +44,27 @@ public class CiboConfig {
         Pizza pizza=new  Pizza("Margherita",7.0,1104);
         pizza.addTopping(cheese());
         pizza.addTopping(tomato());
-        pizza.setNome("Margherita");
         return pizza;
     }
     @Bean
     public Pizza hawaiana(){
-        Pizza pizza=margherita();
-        pizza.addTopping(ham());
-        pizza.addTopping(pineapple());
-        pizza.setNome("Hawaiana");
-        return pizza;
+        Pizza pizza2=new Pizza("Hawaiana",7.5,2000);
+        pizza2.addTopping(cheese());
+        pizza2.addTopping(tomato());
+        pizza2.addTopping(ham());
+        pizza2.addTopping(pineapple());
+        pizza2.setNome("Hawaiana");
+
+        return pizza2;
     };
     @Bean
     public Pizza salami(){
-        Pizza pizza=margherita();
-        pizza.addTopping(salame());
-        pizza.setNome("Salami");
-        return pizza;
+        Pizza pizza3=new Pizza("Salami",8.0,3000);
+        pizza3.addTopping(cheese());
+        pizza3.addTopping(tomato());
+        pizza3.addTopping(salame());
+        pizza3.setNome("Salami");
+        return pizza3;
     }
 
     //Drinks
