@@ -25,7 +25,7 @@ public class Pizza extends Cibo{
     public void printCiboDetails() {
         System.out.println("Pizza: " + getNome());
         System.out.println("Prezzo: " + getPrezzo());
-        System.out.println("Calorie " + getCalorie());
+        System.out.println("Calorie: " + getCalorie());
         System.out.println("Toppings: ");
         for (Toppings topping : toppings) {
             System.out.println(" - " + topping.getNome());

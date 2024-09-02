@@ -22,9 +22,12 @@ public class Menu {
     }
 
     public void printMenu() {
+        System.out.println(" ");
+        System.out.println("RISTORANTE PIZZERIA 'MAMMA MIA'");
+        System.out.println(" ");
         for (Cibo cibo : menu) {
             cibo.printCiboDetails();
-            System.out.println("----------");
+            System.out.println("-------------");
         }
     }
 }
